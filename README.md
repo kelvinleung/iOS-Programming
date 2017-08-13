@@ -41,3 +41,9 @@ The alignment rectangle is very similar to the frame. In fact, these two rectang
 Intrinsic content size is the size that a view “wants” to be. For labels, this size is the size of the text rendered at the given font. For images, this is the size of the image itself.
 
 A view’s intrinsic content size acts as implicit width and height constraints. If you do not specify constraints that explicitly determine the width, the view will be its intrinsic width. The same goes for the height.
+
+## Others
+
+### Property Observer
+
+Property observers are not triggered when the property value is changed from within an initializer.
