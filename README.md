@@ -24,6 +24,10 @@ Sizes, positions, lines, and curves are always described in points to allow for 
 
 A view's frame is relative to its superview.
 
+### viewDidLoad()
+
+Only trigger once.
+
 ## Auto Layout
 
 ### Alignment Rectangle
