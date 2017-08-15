@@ -101,18 +101,38 @@
             </objects>
             <point key="canvasLocation" x="1804" y="37.331334332833585"/>
         </scene>
+        <!--Booking-->
+        <scene sceneID="LpE-iS-CJL">
+            <objects>
+                <viewController id="rov-aj-hKc" customClass="BookingViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="elw-Ye-BV6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <tabBarItem key="tabBarItem" title="Booking" id="6fu-4J-51k"/>
+                    <connections>
+                        <outlet property="webView" destination="elw-Ye-BV6" id="4sN-Pe-JwG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7Z-gQ-ivE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="-776"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kh3-Zl-BGG">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BCf-19-5Oo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="p3B-ka-beu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qys-iV-B2B"/>
                         <segue destination="WTv-r7-CoD" kind="relationship" relationship="viewControllers" id="nBD-E4-0FD"/>
+                        <segue destination="rov-aj-hKc" kind="relationship" relationship="viewControllers" id="HX5-Z7-vJc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgw-ZF-50L" userLabel="First Responder" sceneMemberID="firstResponder"/>

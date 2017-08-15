@@ -16,6 +16,7 @@
 		B600B55D1F40510400A4FF5D /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B600B55C1F40510400A4FF5D /* ConversionViewController.swift */; };
 		B650BC691F4183EE0036B9C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B650BC681F4183EE0036B9C7 /* MapKit.framework */; };
 		B650BC6B1F4197E80036B9C7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B650BC6A1F4197E80036B9C7 /* MapViewController.swift */; };
+		B6F2F8521F4347FA00231F87 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F2F8511F4347FA00231F87 /* BookingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B600B55C1F40510400A4FF5D /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		B650BC681F4183EE0036B9C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B650BC6A1F4197E80036B9C7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B6F2F8511F4347FA00231F87 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B600B52E1F40329100A4FF5D /* AppDelegate.swift */,
 				B600B55C1F40510400A4FF5D /* ConversionViewController.swift */,
 				B650BC6A1F4197E80036B9C7 /* MapViewController.swift */,
+				B6F2F8511F4347FA00231F87 /* BookingViewController.swift */,
 				B600B5321F40329100A4FF5D /* Main.storyboard */,
 				B600B5371F40329100A4FF5D /* LaunchScreen.storyboard */,
 				B600B5351F40329100A4FF5D /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 			files = (
 				B600B55D1F40510400A4FF5D /* ConversionViewController.swift in Sources */,
 				B650BC6B1F4197E80036B9C7 /* MapViewController.swift in Sources */,
+				B6F2F8521F4347FA00231F87 /* BookingViewController.swift in Sources */,
 				B600B52F1F40329100A4FF5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
