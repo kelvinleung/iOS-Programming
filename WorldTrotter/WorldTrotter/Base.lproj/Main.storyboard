@@ -91,11 +91,14 @@
         <scene sceneID="uFx-GM-NFV">
             <objects>
                 <viewController id="WTv-r7-CoD" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="INQ-mt-RKV">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Jfh-iV-I9s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="tUi-Vr-K7h"/>
+                    <connections>
+                        <outlet property="mapView" destination="Jfh-iV-I9s" id="DQk-lV-Yzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DN-lR-LCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

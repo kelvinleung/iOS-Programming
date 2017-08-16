@@ -11,11 +11,10 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    var mapView: MKMapView!
+    @IBOutlet var mapView: MKMapView!
     
-    override func loadView() {
-        mapView = MKMapView()
-        view = mapView
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)
@@ -33,13 +32,9 @@ class MapViewController: UIViewController {
             topConstraint,
             leadingConstraint,
             trailingConstraint
-        ])
+            ])
         
         segmentedControl.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     @objc private func mapTypeChanged(_ segControl: UISegmentedControl) {
