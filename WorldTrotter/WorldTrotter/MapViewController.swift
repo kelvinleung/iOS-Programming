@@ -12,9 +12,12 @@ import MapKit
 class MapViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var btnLocate: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        btnLocate.layer.cornerRadius = 10
         
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5)

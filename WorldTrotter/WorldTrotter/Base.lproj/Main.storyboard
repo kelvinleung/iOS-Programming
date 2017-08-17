@@ -91,13 +91,38 @@
         <scene sceneID="uFx-GM-NFV">
             <objects>
                 <viewController id="WTv-r7-CoD" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="Jfh-iV-I9s">
+                    <view key="view" contentMode="scaleToFill" id="eK7-5g-ONE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mqz-hd-UyO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </mapView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBu-2M-h3f">
+                                <rect key="frame" x="146" y="558" width="83" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="10" maxX="16" maxY="10"/>
+                                <state key="normal" title="Locate">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mqz-hd-UyO" firstAttribute="top" secondItem="eK7-5g-ONE" secondAttribute="top" id="3Ec-Ow-U1E"/>
+                            <constraint firstItem="8wy-WE-0ce" firstAttribute="bottom" secondItem="mBu-2M-h3f" secondAttribute="bottom" constant="20" id="BYF-R9-VWE"/>
+                            <constraint firstItem="Mqz-hd-UyO" firstAttribute="bottom" secondItem="8wy-WE-0ce" secondAttribute="bottom" id="Y8l-V6-QzM"/>
+                            <constraint firstItem="Mqz-hd-UyO" firstAttribute="leading" secondItem="8wy-WE-0ce" secondAttribute="leading" id="c2M-l7-Nnb"/>
+                            <constraint firstItem="Mqz-hd-UyO" firstAttribute="trailing" secondItem="8wy-WE-0ce" secondAttribute="trailing" id="d7z-5C-FE4"/>
+                            <constraint firstItem="mBu-2M-h3f" firstAttribute="centerX" secondItem="eK7-5g-ONE" secondAttribute="centerX" id="xqV-Ot-WeE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8wy-WE-0ce"/>
+                    </view>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="tUi-Vr-K7h"/>
                     <connections>
-                        <outlet property="mapView" destination="Jfh-iV-I9s" id="DQk-lV-Yzy"/>
+                        <outlet property="btnLocate" destination="mBu-2M-h3f" id="t3E-9j-7Ku"/>
+                        <outlet property="mapView" destination="Mqz-hd-UyO" id="ktr-c8-aQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DN-lR-LCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
