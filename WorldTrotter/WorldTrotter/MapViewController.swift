@@ -14,8 +14,12 @@ class MapViewController: UIViewController {
     @IBOutlet var mapView: MKMapView!
     @IBOutlet weak var btnLocate: UIButton!
     
+    let regionRadius: CLLocationDistance = 1000
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
         
         btnLocate.layer.cornerRadius = 10
         
@@ -38,6 +42,9 @@ class MapViewController: UIViewController {
             ])
         
         segmentedControl.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
+        
+        mapView.showsUserLocation = true
+        centerMapOnLocation(location: initialLocation)
     }
     
     @objc private func mapTypeChanged(_ segControl: UISegmentedControl) {
@@ -51,5 +58,10 @@ class MapViewController: UIViewController {
         default:
             break
         }
+    }
+    
+    private func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
     }
 }
